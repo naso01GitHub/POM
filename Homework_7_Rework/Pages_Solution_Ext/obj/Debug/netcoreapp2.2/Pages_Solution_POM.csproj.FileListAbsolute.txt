@@ -1,0 +1,14 @@
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\Pages_Solution_POM.deps.json
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\Pages_Solution_POM.dll
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\Pages_Solution_POM.pdb
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\obj\Debug\netcoreapp2.2\Pages_Solution_POM.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\obj\Debug\netcoreapp2.2\Pages_Solution_POM.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\obj\Debug\netcoreapp2.2\Pages_Solution_POM.AssemblyInfo.cs
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\obj\Debug\netcoreapp2.2\Pages_Solution_POM.dll
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\obj\Debug\netcoreapp2.2\Pages_Solution_POM.pdb
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\nunit.engine.dll
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\nunit.engine.api.dll
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\Pages_Solution_POM.runtimeconfig.json
+C:\Users\Home\Desktop\SoftUni\7\Homework_7_Rework\Pages_Solution_Ext\bin\Debug\netcoreapp2.2\Pages_Solution_POM.runtimeconfig.dev.json
