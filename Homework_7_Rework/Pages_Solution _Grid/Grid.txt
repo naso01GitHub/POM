@@ -1,0 +1,38 @@
+java -jar selenium-server-standalone-<version>.jar 
+-role hub -port <number>
+
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+
+
+
+
+
+
+
+java 
+-Dwebdriver=“<path to chromedriver.exe>" 
+-jar selenium-server-standalone-<version>.jar 
+-role node 
+-hub <hub URL>/grid/register/ 
+-browser browserName=chrome,version=77.0,platform=Windows
+
+
+java
+-Dwebdriver=“C:\Users\Home\Desktop\SoftUni\8\chromedriver.exe" 
+-jar selenium-server-standalone-3.141.59.jar
+-role node 
+-hub http://192.33.198.101:4444/grid/register/
+-browser browserName=chrome,version=77.0,platform=Windows
+
+
+
+java -Dwebdriver=“C:\Users\Home\Desktop\SoftUni\8\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.33.168.101:4444/grid/register/ -browser browserName=chrome,version=77.0,platform=Windows
+
+
+http://192.33.168.101:4444/grid/register/
+http://192.33.168.101:4444/grid/register
+http://192.33.168.101:4444/grid/console
+
+
+
