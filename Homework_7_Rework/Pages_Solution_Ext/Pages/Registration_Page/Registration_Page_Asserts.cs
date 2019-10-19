@@ -20,7 +20,6 @@ namespace Pages_Solution.Pages
             }
             else if (ExpectedErrorMessages.Count > 1)
             {
-                
                 Assert.IsTrue(BaseErrorMessage.Contains("There are " + ExpectedErrorMessages.Count.ToString()), "The error count in Main Error message is wrong.");
             }
         }
