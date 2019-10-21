@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
@@ -155,6 +156,101 @@ namespace Pages_Solution
         {
             var newTabDriver = driver.SwitchTo().Window(name);
             return newTabDriver;
+        }
+
+
+        public static bool navigateToFrame_ByName(IWebDriver driver ,string frame)
+        {
+            try
+            {
+                driver.SwitchTo().Frame(frame);
+            }
+            catch (NoSuchFrameException)
+            {
+                return false;
+            }
+            return true;
+        }
+
+
+
+        public static IWebElement selectFirst_ByXPath_inAllFrames(IWebDriver driver , string XPath)
+        {
+            IWebElement el;
+            IList<IWebElement> iframes_XPath = driver.FindElements(By.XPath("//iframe"));
+            for (int i = 0; i < iframes_XPath.Count; i++)
+            {
+
+                try
+                {
+                    driver.SwitchTo().Frame(i);
+                }
+                catch (NoSuchFrameException)
+                {
+                    continue;
+                }
+
+                try
+                {
+                    el = driver.FindElement(By.XPath(XPath));
+                    return el;
+                }
+                catch (NoSuchElementException)
+                {
+
+                }
+
+                el = selectFirst_ByXPath_inAllFrames(driver , XPath);
+                if (el != null)
+                {
+                    return el;
+                }
+                else
+                {
+                    driver.SwitchTo().ParentFrame();
+                }
+            }
+            return null;
+        }
+
+
+        public static IWebElement selectFirst_ByID_inAllFrames(IWebDriver driver ,string sID)
+        {
+            IWebElement el;
+            IList<IWebElement> iframes_XPath = driver.FindElements(By.XPath("//iframe"));
+            for (int i = 0; i < iframes_XPath.Count; i++)
+            {
+
+                try
+                {
+                    driver.SwitchTo().Frame(i);
+                }
+                catch (NoSuchFrameException)
+                {
+                    continue;
+                }
+
+                try
+                {
+                    el = driver.FindElement(By.XPath(sID));
+                    return el;
+                }
+                catch (NoSuchElementException)
+                {
+
+                }
+
+                el = selectFirst_ByID_inAllFrames(driver ,sID);
+                if (el != null)
+                {
+                    return el;
+                }
+                else
+                {
+                    driver.SwitchTo().ParentFrame();
+                }
+            }
+            return null;
         }
     }
 }
