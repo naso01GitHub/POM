@@ -12,7 +12,7 @@ namespace Pages_Solution
 {
    
     [TestFixture]
-    public class POM_Test : BaseTest
+    public class POM_Registration : BaseTest
     {
 
         //private ChromeDriver _driver;
